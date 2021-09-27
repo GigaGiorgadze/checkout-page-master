@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="img/devchallenges.png" />
+  <title>Checkout page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Checkout</h1>
+
+  <main>
+    <form>
+    <p>Contact information</p>
+    <label>
+      <span>E-mail</span>
+      <input type="email" name="mail" required id="mail" placeholder="Enter your mail...">
+    </label>
+    <label>
+      <span>Phone</span>
+      <input type="tel" name="phone" required id="phone" placeholder="Enter your phone...">
+    </label>
+    <p class="separator">
+      Shipping address
+    </p>
+    <label>
+      <span>Full name</span>
+      <input type="text" name="name" required id="name" placeholder="Enter your name...">
+    </label>
+    <label>
+      <span>Address</span>
+      <input type="text" name="address" required id="address" placeholder="Your address...">
+    </label>
+    <label>
+      <span>City</span>
+      <input type="text" name="city" required id="city" placeholder="Your city...">
+    </label>
+    <div class="twoInputs">
+      <label>
+        <span>Country</span>
+        <select name="country" required id="country">
+          <option>Your country...</option>
+          <option>Georgia</option>
+          <option>Romania</option>
+          <option>Bulgaria</option>
+        </select>
+      </label>
+      <label>
+        <span>Postal code</span>
+        <input type="number" name="postal" required id="code" placeholder="Your postal code...">
+      </label>
+    </div>
+    <label class="checkbox">
+      <input type="checkbox"  name="save" id="save">
+      <span>Save this information for next time</span>
+    </label>
+    <input type="submit" id="submit" value="Continue">
+    </form>
+    <div class="shippingDiv">
+      <div class="product">
+        <img src="img/photo1.png" alt="">
+        <div class="productInfo">
+          <h4>Vintage Backgab</h4>
+          <span class="orange">$54.99</span>
+          <span class="dashed">$94.99</span>
+          <div class="counterDiv">
+            <button class="minus"><i class="fas fa-minus"></i></button>
+            <span class="count">1</span>
+            <button class="plus"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/photo2.png" alt="">
+        <div class="productInfo">
+          <h4>Vintage Backgab</h4>
+          <span class="orange">$54.99</span>
+          <span class="dashed">$94.99</span>
+          <div class="counterDiv">
+            <button class="minus"><i class="fas fa-minus"></i></button>
+            <span class="count">1</span>
+            <button class="plus"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+       
+      </div>
+      <hr>
+      <div class="info"><h3>Shipping</h3><span>$19</span></div>
+      <hr>
+      <div class="info"><h3>Total</h3><span>$148.99</span></div>
+    </div>
+  </main>
+  <footer>
+    <span>created by <a href="https://devchallenges.io/portfolio/GigaGiorgadze" target="_blank">Giga</a> - devChallenges.io</span>
+  </footer>
+</body>
+</html>
