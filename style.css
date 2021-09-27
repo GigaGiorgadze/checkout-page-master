@@ -90,7 +90,7 @@ select{
     align-items: center;
 }
 .shippingDiv{
-    width: 40%;
+    width: 400px;
     margin-top: 7%;
     height: 70vh;
     padding: 3%;
@@ -184,4 +184,7 @@ a{
     .shippingDiv{
         height: 80vh;
     }
+}
+i{
+    pointer-events: none;
 }
